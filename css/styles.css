@@ -44,9 +44,13 @@ img {
   padding-bottom: 120px;
 }
 
+/* !!!!!!!!!!!!!!!!!!ХЕДЕР!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .page-hader {
   border-bottom: 1px solid #e7e9fc;
   background: #fff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-hader-conteiner {
@@ -96,12 +100,12 @@ span {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
 .link:focus {
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -136,12 +140,14 @@ span {
   display: flex;
   align-items: center;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-tel :hover,
 .mail-tel :focus {
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* !!!!!!!!!!!!!!    СЕКЦИЯ 1  !!!!!!!!!!!!!!!!!!! */
 
 .hero {
   background-color: #2e2f42;
@@ -152,6 +158,9 @@ span {
     url(../images/people-office.jpg);
   max-width: 1440px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-conteiner {
@@ -188,13 +197,15 @@ span {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .start:hover,
 .start:focus {
   background-color: #404bbf;
   color: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* !!!!!!!!!!!!!!!!    СЕКЦИЯ 2  !!!!!!!!!!!!!!!!!! */
 
 .two-section-list {
   display: flex;
@@ -256,6 +267,8 @@ span {
   letter-spacing: 0.02em;
 }
 
+/* !!!!!!!!!!!!!!!!!   СЕКЦИЯ 3   !!!!!!!!!!!!!!!!! */
+
 .our-team {
   background-color: #f4f4fd;
 }
@@ -273,12 +286,12 @@ span {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
-}
-
-.kard:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.kard:hover {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -324,17 +337,19 @@ span {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
 :focus {
   background-color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
+
+/* !!!!!!!!!!!!!!!!!!!   СЕКЦИЯ 4  !!!!!!!!!!!!!!!!!! */
 
 .portfolio-conteiner {
   display: flex;
@@ -352,6 +367,12 @@ span {
 .portfolio-card {
   width: calc((100% - 48px) / 3);
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-block-text {
@@ -360,9 +381,7 @@ span {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
 }
 
 .portfolio-block {
@@ -399,8 +418,12 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* !!!!!!!!!!!!!!!!!!  ФУТЕР  !!!!!!!!!!!!!!!!!! */
+
 .footer-icon {
   display: flex;
+  margin-right: 120px;
 }
 
 .end {
@@ -426,29 +449,41 @@ span {
   letter-spacing: 0.02em;
   width: 264px;
 }
-.socisl-media {
+
+.social-media-div {
   display: flex;
 }
+
 .social-media-title {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.social-media {
+  gap: 16px;
+}
+
+.social-media-list {
+  width: 40px;
+  height: 40px;
 }
 
 .social-media-link-footer {
   background-color: #4d5ae5;
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link-footer:hover,
 :focus {
   background-color: #31d0aa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
