@@ -418,9 +418,9 @@ span {
 
 /* !!!!!!!!!!!!!!!!!!  ФУТЕР  !!!!!!!!!!!!!!!!!! */
 
-/* .footer-icon {
-  margin-right: 120px;
-} */
+.footer-icon {
+  display: flex;
+}
 
 .end {
   background-color: #2e2f42;
