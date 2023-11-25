@@ -207,11 +207,6 @@ span {
 
 /* !!!!!!!!!!!!!!!!    СЕКЦИЯ 2  !!!!!!!!!!!!!!!!!! */
 
-.two-section-list {
-  display: flex;
-  gap: 24px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -225,18 +220,23 @@ span {
   overflow: hidden;
 }
 
+.two-section-list {
+  display: flex;
+  gap: 24px;
+}
+
 .two-section-item {
   width: calc((100% - 72px) / 4);
 }
 
 .two-section-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
-  width: 264px;
   height: 112px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 
@@ -465,6 +465,10 @@ span {
 
 .social-media {
   gap: 16px;
+}
+
+.social-media-icon {
+  fill: #f4f4fd;
 }
 
 .social-media-list {
