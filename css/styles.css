@@ -422,6 +422,10 @@ span {
   display: flex;
 }
 
+.logo-div {
+  margin-right: 120px;
+}
+
 .end {
   background-color: #2e2f42;
   padding-top: 100px;
