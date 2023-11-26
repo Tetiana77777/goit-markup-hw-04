@@ -430,7 +430,6 @@ span {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
   align-items: baseline;
 }
 
@@ -488,8 +487,4 @@ span {
 .social-media-link-footer:hover,
 :focus {
   background-color: #31d0aa;
-}
-
-.container-footer {
-  margin-right: 120px;
 }
