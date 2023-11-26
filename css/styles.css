@@ -322,8 +322,11 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   margin-top: 8px;
+}
+
+.social-media-list {
+  gap: 24px;
 }
 
 .social-media-link {
@@ -420,6 +423,7 @@ span {
 
 .footer-icon {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-div {
@@ -430,7 +434,6 @@ span {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  align-items: baseline;
 }
 
 .logo-futer {
@@ -461,6 +464,7 @@ span {
 }
 
 .social-media {
+  display: flex;
   gap: 16px;
 }
 
@@ -481,10 +485,10 @@ span {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link-footer:hover,
-:focus {
+.social-media-link-footer:focus {
   background-color: #31d0aa;
 }
